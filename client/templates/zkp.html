@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZeroSpace.secure</title>
+  </head>
+  <style>
+    html,
+    body {
+      margin: 0%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+    :root {
+      /*  theme fonts*/
+      --Abel: "Abel", cursive;
+      --Anton: "Anton", cursive;
+      --Lexend: "Lexend", cursive;
+
+      --color-gray: #415a77;
+      --color-blue: #003566;
+      --color-white: white;
+
+      --gcolor-blue: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    }
+
+    /*-------gobals*/
+    a {
+      text-decoration: none;
+      color: var(--color-gray);
+    }
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    ul {
+      list-style-type: none;
+    }
+    /* goblaxxxxxxxxxxxxxx */
+    .nav {
+      background: white;
+      padding: 0 2rem;
+      height: 0rem;
+      min-height: 10vh;
+    }
+    .nav .nav-menu {
+      justify-content: space-between;
+    }
+    .nav .nav-items {
+      padding-right: 7rem;
+      display: flex;
+      margin: 0;
+    }
+    .nav .nav-items .nav-link {
+      padding: 1.6rem 1rem;
+      font-size: 1.1rem;
+      position: relative;
+      font-family: var(--Abel);
+      font-size: 1.1rem;
+    }
+    .nav .nav-items .nav-link:hover {
+      background-color: var(--color-gray);
+    }
+    .nav .nav-items .nav-link:hover a {
+      color: var(--color-white);
+    }
+    .nav .nav-brand a {
+      font-size: 2.4rem;
+      padding: 1rem 1rem;
+      display: block;
+      font-family: var(--Lexend);
+      padding-top: 19px;
+    }
+
+    /* main styling*/
+
+    main .site-title {
+      background: var(--gcolor-blue);
+      display: flex;
+      justify-content: center;
+      background-size: cover;
+    }
+    main .site-title .site-background {
+      padding: 15rem;
+      text-align: center;
+      color: var(--color-blue);
+    }
+    main .site-title h1 {
+      margin: 0rem;
+    }
+    main .site-cot {
+      background: whitesmoke;
+    }
+
+    main .site-cot .site-bgcot {
+      padding: 2rem;
+      text-align: center;
+      color: var(--color-blue);
+      font-family: var(--Abel);
+    }
+    .two {
+      background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+      font-family: var(--Lexend);
+      color: #003566;
+      display: flex;
+      min-height: 90vh;
+    }
+    .login {
+      color: #fff;
+      background: white;
+      color: #003566;
+      margin: auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.3),
+        0 30px 60px 1px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      padding: 50px;
+    }
+    .login .head {
+      color: #415a77;
+      font-family: var(--Lexend);
+      display: flex;
+      padding: 3rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .login .head .company {
+      font-size: 3rem;
+    }
+    .login .msg {
+      color: #415a77;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+    .login .form input[type="text"].text {
+      border: none;
+      background: 0 0;
+      box-shadow: 0 2px 0 0 #415a77;
+      width: 100%;
+      color: #003566;
+      font-size: 1em;
+      outline: none;
+    }
+
+    .login .form .text::placeholder {
+      color: #415a77;
+    }
+
+    .login .form input[type="password"].password {
+      border: none;
+      background: 0 0;
+      box-shadow: 0 2px 0 0 #415a77;
+      width: 100%;
+      color: #415a77;
+      font-size: 1em;
+      outline: none;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .login .form .password::placeholder {
+      color: #d3d3d3;
+    }
+    .login .form .btn-login {
+      background: 0 0;
+      text-decoration: none;
+      color: #003566;
+      box-shadow: 0 0 0 2px #415a77;
+      border-radius: 3px;
+      padding: 5px 2em;
+      transition: 0.5s;
+    }
+    .login .form .btn-login:hover {
+      background: #003566;
+      color: #f4f6f8;
+      transition: 0.5s;
+    }
+    .login .forgot {
+      text-decoration: none;
+      color: #003566;
+      float: right;
+    }
+  </style>
+
+  <body class="one">
+    <!-- navvvvvvvvvvvvvv-->
+    <nav class="nav">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <a herf="#" class="text-gray">ZeroSpace</a>
+        </div>
+        <div>
+          <ul class="nav-items">
+            <li class="nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Encryption</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Support</a>
+            </li>
+            <li class="nav-link">
+              <a href="/logins">Login</a>
+            </li>
+            <li class="nav-link">
+              <a href="/registers">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXNav-->
+    <main>
+      <section class="site-title">
+        <div class="site-background">
+          <h1>Secure cloud storage. Because privacy matters.</h1>
+        </div>
+      </section>
+      <section class="site-cot">
+        <div class="site-bgcot">
+          <h2>
+            Privacy is an inherent human right, and a requirement for
+            maintaining the human condition with dignity and respect.
+          </h2>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
